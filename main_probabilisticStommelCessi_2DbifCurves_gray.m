@@ -12,7 +12,7 @@ Frequency_FP2 = zeros(length(G),1);
 etaSquared_cusp = 3; % below, there is no fold bifurcation
 %% load etaSquared from UQLab results
 load('UQpostSample_y0_0K4_T5_etaP2_4_p0K85_noise0K3_priorUni_0K6_12K3_AIES_steps400_NChains100.mat');
-etaSquared = UQpostSample(1:1:end)'; % use full posterior sample loaded
+etaSquared = UQpostSample(1:10:end)'; % use full posterior sample loaded
 m_etaSquared = mean(etaSquared);
 M = length(etaSquared);
 % %% sample etaSquared from random normal sample
